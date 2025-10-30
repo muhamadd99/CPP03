@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 22:36:08 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/30 09:48:32 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/30 22:46:48 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ public:
 	FragTrap(const FragTrap& other);
 	FragTrap& operator=(const FragTrap& other);
 	~FragTrap();
+	unsigned int getFragHP(void);
+	unsigned int getFragAD(void);
 void	highFiveGuys(void);
 };
 

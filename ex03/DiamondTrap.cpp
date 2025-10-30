@@ -6,50 +6,37 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 09:53:08 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/30 16:55:46 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/30 22:53:50 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
+#include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 #include <iostream>
 
 DiamondTrap::DiamondTrap()
 {
 	name = "Default";
-	ClapTrap::_name = name + "_clap_trap";
-	_hitPoints = FragTrap::_hitPoints;
-	_energyPoints = ScavTrap::_energyPoints;
-	_attackDamage = FragTrap::_attackDamage;
+	ClapTrap::_name = name + "_clap_name";
+	_hitPoints = FragTrap::getFragHP();
+	_energyPoints = ScavTrap::getScavEP();
+	_attackDamage = FragTrap::getFragAD();
 	std::cout << "DiamondTrap default constructor called" << std::endl;
 }
 
-// DiamondTrap::DiamondTrap(std::string nameParam) : name(nameParam)
-// {
-// 	ClapTrap::_name = nameParam + "_clap_trap";
-// 	_hitPoints = FragTrap::_hitPoints;
-// 	_energyPoints = ScavTrap::_energyPoints;
-// 	std::cout << "DiamondTrap" << _energyPoints << "ScavTrap:" << ScavTrap::_energyPoints << std::endl;
-// 	_attackDamage = FragTrap::_attackDamage;
-// 	std::cout << "DiamondTrap parameterized constructor called" << std::endl;
-// }
-
 DiamondTrap::DiamondTrap(std::string nameParam) : name(nameParam)
 {
-    ClapTrap::_name = nameParam + "_clap_name";
-    
-    std::cout << "Before assignment - _energyPoints: " << _energyPoints << std::endl;
-    std::cout << "ScavTrap::_energyPoints: " << ScavTrap::_energyPoints << std::endl;
-    std::cout << "FragTrap::_energyPoints: " << FragTrap::_energyPoints << std::endl;
-    
-    _energyPoints = ScavTrap::_energyPoints;  // This is ALREADY 100!
-    
-    std::cout << "After assignment - _energyPoints: " << _energyPoints << std::endl;
+    ClapTrap::_name = nameParam + "_clap_name"; 
+	_hitPoints = FragTrap::getFragHP();
+	_energyPoints = ScavTrap::getScavEP();
+	_attackDamage = FragTrap::getFragAD();
+    std::cout << "DiamondTrap parameterized constructor called" << _energyPoints << std::endl;
 }
 
 //: ClapTrap(other), ScavTrap(other), FragTrap(other), name(other.name)
-DiamondTrap::DiamondTrap(const DiamondTrap& other) 
+DiamondTrap::DiamondTrap(const DiamondTrap& other) : ClapTrap(other), ScavTrap(other), FragTrap(other), name(other.name)
 {
-	*this = other;
 	std::cout << "DiamondTrap copy constructor called" << std::endl;
 }
 
@@ -58,7 +45,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 	if (this != &other)
 	{
 		name = other.name;
-		ClapTrap::_name = name + "_clap_trap";
+		ClapTrap::_name = name + "_clap_name";
 		//ClapTrap::name = other.ClapTrap::name;
 		_hitPoints = other._hitPoints;
 		_energyPoints = other._energyPoints;

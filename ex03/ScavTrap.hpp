@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 14:20:18 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/30 16:44:09 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/30 22:45:53 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ public:
 	~ScavTrap();
 	void	attack(const std::string& target);
 	void	guardGate();
+	unsigned int	getScavEP(void);
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 14:21:07 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/30 16:44:20 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/30 22:45:56 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,4 +73,9 @@ void	ScavTrap::attack(const std::string &target)
 void	ScavTrap::guardGate()
 {
 	std::cout << "Guard Gate mode ON. Kāiqǐ Guard Gate mode" << std::endl;
+}
+
+unsigned int	ScavTrap::getScavEP()
+{
+	return (50);
 }
