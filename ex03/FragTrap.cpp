@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 22:35:52 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/30 12:40:54 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/30 00:13:12 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,5 @@ FragTrap::~FragTrap()
 
 void	FragTrap::highFiveGuys(void)
 {
-	std::cout << "Please High Five me Guys. Qing gei wo gao wu" << std::endl;
+	std::cout << "High Five Guys" << std::endl;
 }
