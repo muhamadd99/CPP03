@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 08:44:46 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/30 17:25:27 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/31 12:10:48 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	DiamondTrap(std::string name);
 	DiamondTrap(const DiamondTrap& other);
 	DiamondTrap& operator=(const DiamondTrap& other);
-	virtual ~DiamondTrap();
+	~DiamondTrap();
 	
 	void	whoAmI();
 	void	attack(const std::string& target);

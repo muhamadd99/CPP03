@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 09:16:12 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/29 14:39:18 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/31 12:13:16 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,26 +27,26 @@
  
 class ClapTrap{
 protected:
-std::string		_name;
-unsigned int	_hitPoints;
-unsigned int	_energyPoints;
-unsigned int	_attackDamage;
+	std::string		_name;
+	unsigned int	_hitPoints;
+	unsigned int	_energyPoints;
+	unsigned int	_attackDamage;
 
 public:
-ClapTrap();
-ClapTrap(const std::string& name);
-ClapTrap(const ClapTrap& other); //copy constructor
-ClapTrap& operator=(const ClapTrap& other); //copy assignment operator constructor
-~ClapTrap();
-//member functions
-void	attack(const std::string& target);
-void	takeDamage(unsigned int amount);
-void	beRepaired(unsigned int amount);
-//getters
-const std::string&	getName() const;
-unsigned int		getHitPoints() const;
-unsigned int		getEnergyPoints() const;
-unsigned int		getAttackDamage() const;
+	ClapTrap();
+	ClapTrap(const std::string& name);
+	ClapTrap(const ClapTrap& other)	; //copy constructor
+	ClapTrap& operator=(const ClapTrap& other); //copy assignment operator constructor
+	~ClapTrap();
+	//member	 functions
+	void	attack(const std::string& target);
+	void	takeDamage(unsigned int amount);
+	void	beRepaired(unsigned int amount);
+	//getters
+	const std::string&	getName() const;
+	unsigned int		getHitPoints() const;
+	unsigned int		getEnergyPoints() const;
+	unsigned int		getAttackDamage() const;
 };
 
 #endif

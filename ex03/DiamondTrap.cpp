@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 09:53:08 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/31 10:28:36 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/31 12:17:20 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ DiamondTrap::DiamondTrap(std::string nameParam) : ClapTrap(nameParam + "_clap_na
 	_hitPoints = FragTrap::_HP;
 	_energyPoints = ScavTrap::_EP;
 	_attackDamage = FragTrap::_AD;
-    std::cout << "DiamondTrap parameterized constructor called" << _energyPoints << std::endl;
+    std::cout << "DiamondTrap parameterized constructor called" << std::endl;
 }
 
 //: ClapTrap(other), ScavTrap(other), FragTrap(other), name(other.name)

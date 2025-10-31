@@ -6,7 +6,7 @@
 /*   By: mbani-ya <mbani-ya@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 10:56:58 by mbani-ya          #+#    #+#             */
-/*   Updated: 2025/10/31 10:06:29 by mbani-ya         ###   ########.fr       */
+/*   Updated: 2025/10/31 11:43:03 by mbani-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int	main()
 	std::cout << "\n=== High Five ===" << std::endl;
 	DieDoll.highFiveGuys();
 	
-	std::cout << "\n === ClapTrap Post Stats: ===" << std::endl; 
+	std::cout << "\n === FrapTrap Post Stats: ===" << std::endl; 
 	std::cout << "Name: " << Doll.getName() << std::endl;
 	std::cout << "HP: " << Doll.getHitPoints() << std::endl; 
 	std::cout << "Energy: " << Doll.getEnergyPoints() << std::endl;
